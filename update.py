@@ -37,7 +37,7 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/codewithweeb/mirror-with-weeb"
+    UPSTREAM_REPO = "https://github.com/kishankr71/WZML"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
@@ -48,8 +48,8 @@ if ospath.exists('.git'):
     srun(["rm", "-rf", ".git"])
 
 update = srun([f"git init -q \
-                 && git config --global user.email codewithweeb@gmail.com \
-                 && git config --global user.name Karan \
+                 && git config --global user.email kishankr71@outlook.com \
+                 && git config --global user.name kishankr71 \
                  && git add . \
                  && git commit -sm update -q \
                  && git remote add origin {UPSTREAM_REPO} \
